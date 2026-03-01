@@ -14,7 +14,7 @@
   </header>
   <main>
     <section id="introduction">
-      <p>Explora el maravilloso mundo de los gatitos con imágenes adorables y datos curiosos.</p>
+      <p>Explora el maravilloso mundo de los gatitos con imágenes adorables, datos curiosos y un pequeño juego.</p>
     </section>
     <section id="gallery">
       <h2>Galería de Gatitos</h2>
@@ -24,6 +24,18 @@
         <img src="https://placekitten.com/402/300" alt="Gatito 3">
       </div>
     </section>
+
+    <section id="game">
+      <h2>Juego: Encuentra las parejas</h2>
+      <p class="muted">Haz clic en las tarjetas para encontrar parejas de gatitos. ¡Intenta con la menor cantidad de movimientos!</p>
+      <div class="game-controls">
+        <div>Movimientos: <span id="moves">0</span></div>
+        <div>Parejas encontradas: <span id="matches">0</span>/3</div>
+        <button id="restart">Reiniciar juego</button>
+      </div>
+      <div id="gameBoard" class="grid" aria-label="Tablero de juego de parejas"></div>
+    </section>
+
     <section id="facts">
       <h2>Dato aleatorio sobre gatitos</h2>
       <p id="fact">Pulsa el botón para conocer un dato curioso.</p>
@@ -33,6 +45,13 @@
   <footer>
     <p>&copy; 2026 Gatitos Tiernos</p>
   </footer>
+  <div id="victory" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="overlay-content">
+      <h3>¡Ganaste! 🎉</h3>
+      <p>Has encontrado todas las parejas en <span id="movesFinal">0</span> movimientos.</p>
+      <button id="playAgain">Jugar de nuevo</button>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 
