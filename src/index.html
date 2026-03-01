@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Gatitos Tiernos</title>
 </head>
 
 <body>
+  <header>
+    <h1>🐱 Bienvenidos a Gatitos Tiernos</h1>
+  </header>
   <main>
-    <h1>Vanilla JavaScript App</h1>
+    <section id="introduction">
+      <p>Explora el maravilloso mundo de los gatitos con imágenes adorables y datos curiosos.</p>
+    </section>
+    <section id="gallery">
+      <h2>Galería de Gatitos</h2>
+      <div class="images">
+        <img src="https://placekitten.com/400/300" alt="Gatito 1">
+        <img src="https://placekitten.com/401/300" alt="Gatito 2">
+        <img src="https://placekitten.com/402/300" alt="Gatito 3">
+      </div>
+    </section>
+    <section id="facts">
+      <h2>Dato aleatorio sobre gatitos</h2>
+      <p id="fact">Pulsa el botón para conocer un dato curioso.</p>
+      <button id="factBtn">Mostrar dato</button>
+    </section>
   </main>
+  <footer>
+    <p>&copy; 2026 Gatitos Tiernos</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
